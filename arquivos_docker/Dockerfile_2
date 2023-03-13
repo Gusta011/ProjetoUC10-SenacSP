@@ -1,0 +1,9 @@
+FROM mysql:8.0
+MAINTAINER gusta
+LABEL description="Banco de dado para estudo na versão 8"
+
+ENV MYSQL_ROOT_PASSWORD senac@123
+ENV MYSQL_DATABASE loja
+
+# Definir a porta
+EXPOSE 6556:3306
